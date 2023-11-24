@@ -6,12 +6,12 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
-  private apiUrl = 'http://localhost:3000'; // Replace with your backend API URL when available
+  private apiUrl = 'http://localhost:7274';
 
   constructor(private http: HttpClient) {}
 
   loginUser(credentials: any): Observable<any> {
-    // Simulating a POST request to the backend
+   
     const url = `${this.apiUrl}/login`;
     return this.http.post(url, credentials);
   }

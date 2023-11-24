@@ -1,4 +1,3 @@
-// register.component.ts
 
 import { Component } from '@angular/core';
 
@@ -13,8 +12,7 @@ export class RegisterComponent {
   password: string = '';
 
   register() {
-    // Add your register logic here
+  
     console.log('Registering with:', this.username, this.email, this.password);
-    // You can send the register request to your backend service from here
   }
 }

@@ -25,8 +25,7 @@ export class MeetingsComponent {
   createMeeting(meetingData: any): void {
     this.meetingService.createMeeting(meetingData).subscribe(
       response => {
-        // Handle successful meeting creation
-        this.loadMeetings(); // Refresh the meetings list
+        this.loadMeetings(); 
       },
       error => {
         console.error('Error creating meeting:', error);
@@ -34,5 +33,5 @@ export class MeetingsComponent {
     );
   }
 
-  // Add updateMeeting and deleteMeeting methods as needed
+  
 }

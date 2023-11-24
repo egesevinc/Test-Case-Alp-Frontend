@@ -1,19 +1,26 @@
-import { NgModule } from '@angular/core';
+// app.module.ts
+
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms'; // Import FormsModule
+
+import { routes } from './app.routes';
 import { AppComponent } from './app.component';
-import { AuthService } from './services/auth.service'; // Import your AuthService here
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    // Add other components here
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule, // Add HttpClientModule here
+    FormsModule, // Add FormsModule here
+    routes
   ],
-  providers: [AuthService], // Add your services here
-  bootstrap: [AppComponent],
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

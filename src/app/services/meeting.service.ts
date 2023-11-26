@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class MeetingService {
-  private apiUrl = 'your_backend_api_url'; // Replace with your actual backend API URL
+  private apiUrl = 'http://localhost:7274'; 
 
   constructor(private http: HttpClient) {}
 
@@ -20,5 +20,4 @@ export class MeetingService {
     return this.http.post(url, meetingData);
   }
 
-  // Add updateMeeting and deleteMeeting methods as needed
 }

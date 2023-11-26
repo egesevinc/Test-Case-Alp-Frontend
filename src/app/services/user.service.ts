@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class UserService {
-  private apiUrl = 'your_backend_api_url'; // Replace with your actual backend API URL
+  private apiUrl = 'your_backend_api_url'; 
 
   constructor(private http: HttpClient) {}
 

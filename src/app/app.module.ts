@@ -1,4 +1,3 @@
-// app.module.ts
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -17,7 +16,7 @@ import { RegisterComponent } from './register/register.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule, // Add FormsModule here
+    FormsModule, 
     routes
   ],
   providers: [],
